@@ -1,4 +1,4 @@
-/* CSS by Christina Carrasquilla, iteration by */
+/* CSS by Christina Carrasquilla, iteration by Monica Garcia Moreno */
 
 /* ===== Color Palette ===== 
 
@@ -103,6 +103,27 @@ footer {
 }
 
 /* ===== Media Query (Medium) ===== */
+@media screen and (min-width: 800px){
+        header, nav, footer {
+            grid-column: 1/-1;
+        }
+        nav {
+            display:flex;
+            justify-content:space-around;
+        }
+        body {
+            display:grid;
+            grid-template-columns:1fr 300px;
+        }
+        .card-row {
+            display:flex;
+            gap:1rem;
+        }
+        .card-row section {
+            width:30%;
+        }
+    }
+
 /* write a media query for a screen with at least 800px */
 /* change the body's grid template to 1fr 300px */
 /* target the header, nav, and footer and style their grid-column to 1/-1 */
